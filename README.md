@@ -16,7 +16,8 @@
 4. Compute the Z Component:
 
     For each pixel, subtract the pixel value in the right image from the corresponding pixel in the left image:
-    Iiz=ILi−IRi
+    ![image](https://github.com/user-attachments/assets/aea5abcb-ed51-4387-a470-ebbbf209f71b)
+
     Iiz​=ILi​​−IRi​​ where ILiILi​​ and IRiIRi​​ are the HSV values for the left and right images respectively. This z-component represents the disparity between the two views for that particular color channel (hue, saturation, or value).
 
 5. Create Extended Tensor:
