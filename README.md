@@ -18,13 +18,15 @@
     For each pixel, subtract the pixel value in the right image from the corresponding pixel in the left image:
     ![image](https://github.com/user-attachments/assets/aea5abcb-ed51-4387-a470-ebbbf209f71b)
 
-    Iiz​=ILi​​−IRi​​ where ILiILi​​ and IRiIRi​​ are the HSV values for the left and right images respectively. This z-component represents the disparity between the two views for that particular color channel (hue, saturation, or value).
+    where ![image](https://github.com/user-attachments/assets/94be491e-2fdf-495b-bc26-3e94689c3a64)
+​​ and ![image](https://github.com/user-attachments/assets/9954bafd-80b6-4b45-9b7a-3ad9ea54b9ab)
+​​ are the HSV values for the left and right images respectively. This z-component represents the disparity between the two views for that particular color channel (hue, saturation, or value).
 
 5. Create Extended Tensor:
 
     Create the extended structure tensor at each pixel. The tensor includes terms like:
-    S=[xxxyxzyxyyyzzxzyzz]
-    S=
+    ![image](https://github.com/user-attachments/assets/a4a5fbcf-06c8-4556-92f5-cd1b5358380a)
+
 
 ​xxyxzx​xyyyzy​xzyzzz​
 Where xx, yy, xy, etc., are the products of the gradients in the x, y, and z directions and their interactions. These terms combine the local intensity variations (gradients) within the left image and the disparity between the left and right images (via the z-component).
