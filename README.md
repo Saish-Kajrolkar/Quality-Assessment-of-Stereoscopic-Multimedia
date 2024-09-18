@@ -28,7 +28,6 @@
     ![image](https://github.com/user-attachments/assets/a4a5fbcf-06c8-4556-92f5-cd1b5358380a)
 
 
-​xxyxzx​xyyyzy​xzyzzz​
 Where xx, yy, xy, etc., are the products of the gradients in the x, y, and z directions and their interactions. These terms combine the local intensity variations (gradients) within the left image and the disparity between the left and right images (via the z-component).
 
 6. 3x3 Tensor at Each Pixel:
